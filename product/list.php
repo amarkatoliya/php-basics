@@ -1,5 +1,6 @@
 <?php
-include_once __DIR__ . "/../product.php";
+include_once __DIR__ . "/product.php";
+
 
 $db = new Database("localhost", "root", "xyz", "");
 $db->connect();

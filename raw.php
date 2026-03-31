@@ -1,5 +1,6 @@
 <?php
-include "database.php";
+include_once __DIR__ . "/database.php";
+
 
 class Row
 {
