@@ -4,7 +4,7 @@ include_once __DIR__ . "/product.php";
 
 $db = new Database("localhost", "root", "xyz", "");
 $db->connect();
-$products = $db->fetchAll("SELECT * FROM product ORDER BY product_id DESC");
+$products = $db->fetchAll("SELECT * FROM product ORDER BY product_id ASC");
 
 include_once __DIR__ . "/../header.php";
 ?>
