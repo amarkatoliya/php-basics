@@ -1,8 +1,7 @@
 <?php
 require_once __DIR__ . "/customer.php";
 
-$db = new Database("localhost", "root", "xyz", "");
-$db->connect();
+$db = new Database();
 $customer = new Customer($db);
 
 if (isset($_GET['id'])) {

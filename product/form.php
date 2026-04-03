@@ -2,8 +2,7 @@
 include_once __DIR__ . "/product.php";
 include_once __DIR__ . "/../header.php";
 
-$db = new Database("localhost", "root", "xyz", "");
-$db->connect();
+$db = new Database();
 $product = new Product($db);
 
 if (isset($_GET['id'])) {

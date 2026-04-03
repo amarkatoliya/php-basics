@@ -2,8 +2,7 @@
 include_once __DIR__ . "/customer.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $db = new Database("localhost", "root", "xyz", "");
-    $db->connect();
+    $db = new Database();
     
     $ids = isset($_POST['customer_ids']) ? $_POST['customer_ids'] : [];
     

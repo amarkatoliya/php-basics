@@ -3,8 +3,7 @@
 require_once __DIR__ . '/customer_group.php';
 require_once __DIR__ . '/../header.php';
 
-$db = new Database("localhost","root","xyz","");
-$db->connect();
+$db = new Database();
 
 $groups = $db->fetchAll("SELECT * FROM customer_group ORDER BY customer_group_id DESC");
 

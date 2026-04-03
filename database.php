@@ -8,12 +8,13 @@ class Database
     private $password;
     private $conn;
 
-    public function __construct($server, $username, $dbname, $password)
+    public function __construct($server = 'localhost', $username = 'root', $dbname = 'xyz', $password = '')
     {
         $this->server = $server;
         $this->username = $username;
         $this->dbname = $dbname;
         $this->password = $password;
+        $this->connect();
     }
 
     public function connect()

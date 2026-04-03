@@ -2,8 +2,7 @@
 require_once __DIR__ . "/product_media.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $db = new Database("localhost", "root", "xyz", "");
-    $db->connect();
+    $db = new Database();
 
     $ids = isset($_POST['media_ids']) ? $_POST['media_ids'] : [];
 

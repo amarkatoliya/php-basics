@@ -1,8 +1,7 @@
 <?php
 require_once __DIR__ . "/product_media.php";
 
-$db = new Database("localhost", "root", "xyz", "");
-$db->connect();
+$db = new Database();
 $media = new ProductMedia($db);
 
 if (isset($_GET['id'])) {

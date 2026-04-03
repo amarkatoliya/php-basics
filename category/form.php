@@ -1,8 +1,7 @@
 <?php
 include_once __DIR__ . "/category.php";
 
-$db = new Database("localhost", "root", "xyz", "");
-$db->connect();
+$db = new Database();
 $category = new Category($db);
 
 if (isset($_GET['id'])) {

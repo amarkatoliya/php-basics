@@ -2,8 +2,7 @@
 include_once __DIR__ . "/category.php";
 
 
-$db = new Database("localhost", "root", "xyz", "");
-$db->connect();
+$db = new Database();
 $categories = $db->fetchAll("SELECT * FROM category ORDER BY category_id DESC");
 
 include_once __DIR__ . "/../header.php";

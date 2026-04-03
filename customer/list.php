@@ -1,8 +1,7 @@
 <?php
 require_once __DIR__ . "/customer.php";
 
-$db = new Database("localhost", "root", "xyz", "");
-$db->connect();
+$db = new Database();
 
 $query = "SELECT c.*, cg.group_name 
           FROM customer c 

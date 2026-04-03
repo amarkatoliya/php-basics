@@ -2,8 +2,7 @@
 include_once __DIR__ . "/product.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $db = new Database("localhost", "root", "xyz", "");
-    $db->connect();
+    $db = new Database();
     $product = new Product($db);
 
     $id = $_POST['product_id'] ?? null;

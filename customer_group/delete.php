@@ -3,8 +3,7 @@
 require_once __DIR__ . "/customer_group.php";
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $db = new Database("localhost","root","xyz","");
-    $db->connect();
+    $db = new Database();
 
     $group = new CustomerGroup($db);
 

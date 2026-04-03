@@ -3,8 +3,7 @@
 include_once __DIR__ . "/category.php";
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $db = new Database("localhost","root","xyz","");
-    $db->connect();
+    $db = new Database();
 
     $category = new Category($db);
 
